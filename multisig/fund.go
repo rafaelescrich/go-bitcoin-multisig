@@ -37,10 +37,8 @@ func generateFund(flagPrivateKey string, flagInputTx string, flagAmount int, fla
 	//In order to construct the raw transaction we need the input transaction hash,
 	//the P2SH destination address, the number of satoshis to send, and the scriptSig
 	//which is temporarily (prior to signing) the ScriptPubKey of the input transaction.
-	publicKey, err := btcutils.NewPublicKey(privateKey)
-	if err != nil {
-		log.Fatal(err)
-	}
+	publicKey := btcutils.NewPublicKey(privateKey)
+
 	publicKeyHash, err := btcutils.Hash160(publicKey)
 	if err != nil {
 		log.Fatal(err)
@@ -83,10 +81,8 @@ func generateFund(flagPrivateKey string, flagInputTx string, flagAmount int, fla
 // signP2PKHTransaction signs a raw P2PKH transaction, given a private key and the scriptPubKey, inputTx and amount
 // to construct the final transaction.
 func signP2PKHTransaction(rawTransaction []byte, privateKey []byte, scriptPubKey []byte, inputTx string, amount int) ([]byte, error) {
-	publicKey, err := btcutils.NewPublicKey(privateKey)
-	if err != nil {
-		return nil, err
-	}
+	publicKey := btcutils.NewPublicKey(privateKey)
+
 	signature, err := btcutils.NewSignature(rawTransaction, privateKey)
 	if err != nil {
 		return nil, err

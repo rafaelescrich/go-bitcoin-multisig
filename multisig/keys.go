@@ -65,10 +65,8 @@ func generateKeys(flagKeyCount int) ([]string, []string, []string) {
 		//Generate private key
 		privateKey := btcutils.NewPrivateKey()
 		//Generate public key from private key
-		publicKey, err := btcutils.NewPublicKey(privateKey)
-		if err != nil {
-			log.Fatal(err)
-		}
+		publicKey := btcutils.NewPublicKey(privateKey)
+
 		//Get hex encoded version of public key
 		publicKeyHexs[i] = hex.EncodeToString(publicKey)
 		//Get public address by hashing with SHA256 and RIPEMD160 and base58 encoding with mainnet prefix 00
