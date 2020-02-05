@@ -1,4 +1,4 @@
-# go-bitcoin-multisig [![GoDoc](https://godoc.org/github.com/soroushjp/go-bitcoin-multisig?status.svg)](https://godoc.org/github.com/soroushjp/go-bitcoin-multisig)
+# go-bitcoin-multisig [![GoDoc](https://godoc.org/github.com/rafaelescrich/go-bitcoin-multisig?status.svg)](https://godoc.org/github.com/rafaelescrich/go-bitcoin-multisig)
 
 Bitcoin [M-of-N Multisig](https://bitcoin.org/en/developer-guide#escrow-and-arbitration) Pay-to-ScriptHash (P2SH) Transaction Builder, built in [Go](https://golang.org/)
 
@@ -30,7 +30,7 @@ First, follow the instructions at [go-secp256k1](https://github.com/toxeus/go-se
 Next, if you have your Go environment set up in the [usual way](https://golang.org/doc/code.html), simply run:
 
 ```bash
-go get github.com/soroushjp/go-bitcoin-multisig
+go get github.com/rafaelescrich/go-bitcoin-multisig
 ```
 
 And that's it! Now you can run the binary:
@@ -133,4 +133,4 @@ go-bitcoin-multisig project is released under the terms of the MIT license. Than
 
 ##Find out more
 
-Built as a working demonstration of the P2SH M-of-N multisig functionality in the Bitcoin protocol and to serve as a easy to read Go reference implementation of raw multisig transactions. If you would like to use this code or similar functionality in your application, I'd love to hear from you so I can extend the project in more useful ways for the Bitcoin community. Reach out on Twitter @soroushjp or email me_AT_soroushjp.com.
+Built as a working demonstration of the P2SH M-of-N multisig functionality in the Bitcoin protocol and to serve as a easy to read Go reference implementation of raw multisig transactions. If you would like to use this code or similar functionality in your application, I'd love to hear from you so I can extend the project in more useful ways for the Bitcoin community. Reach out on Twitter @rafaelescrich or email me_AT_rafaelescrich.com.

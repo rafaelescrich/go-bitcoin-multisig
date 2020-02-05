@@ -3,7 +3,7 @@ package multisig
 
 import (
 	"github.com/prettymuchbryce/hellobitcoin/base58check"
-	"github.com/soroushjp/go-bitcoin-multisig/btcutils"
+	"github.com/rafaelescrich/go-bitcoin-multisig/btcutils"
 
 	"encoding/hex"
 	"fmt"

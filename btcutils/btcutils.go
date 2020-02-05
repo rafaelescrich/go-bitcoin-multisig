@@ -15,8 +15,8 @@ import (
 	mathrand "math/rand"
 	"time"
 
-	"code.google.com/p/go.crypto/ripemd160"
-	secp256k1 "github.com/toxeus/go-secp256k1"
+	"github.com/ethereum/go-ethereum/crypto/secp256k1"
+	"golang.org/x/crypto/ripemd160"
 )
 
 // setFixedNonce is used for testing and debugging. It is by default false, but if set to true, then newNonce()
